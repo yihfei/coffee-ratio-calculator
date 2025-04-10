@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", Arial, sans-serif;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 10px;
+    color: #3f3f3f;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 5px;
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 0.81rem;
+}
+
+input:disabled {
+    background-color: #f0f0f0;
+}
+
+.selected {
+    background-color: #e0f7fa;
+}
+
+#output {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+@media (min-width: 600px) {
+.calculator {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.field {
+    width: 30%;
+}
+
+input {
+    max-width: 100%;
+}
+}
+
+@media (max-width: 400px) {
+.container {
+    padding: 15px;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+.calculator {
+    flex-direction: column;
+    align-items: center;
+}
+
+.field {
+    width: 100%;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+}
+}
